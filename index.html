@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+     <link rel="stylesheet" href="css/styles.css">
+    <title>Climato</title>
+</head>
+<body class="bg-white text-black dark:bg-gray-900 dark:text-white text-base">
+<header class="w-full bg-gray-800 text-gray-300 border-t border-gray-700 relative">
+
+  <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+  <div class="w-full px-4 py-2 grid grid-cols-3 items-center">
+
+    <div class="flex items-center gap-6">
+      <a href="#home">
+      <img src="img/logo.png" alt="Climato" class="w-14 h-14"/>
+      </a>
+
+      <nav class="hidden sm:block">
+        <ul class="flex gap-4 text-sm">
+          <li><a href="#home" class="hover:text-white" data-key="home">Home</a></li>
+          <li><a href="#cities" class="hover:text-white" data-key="cities">Cities</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="flex justify-center">
+      <form id="search-form"
+        class="flex items-center bg-red-polish-800 border border-slate-700 rounded-md overflow-hidden w-full max-w-[170px]">
+
+        <input
+        type="text"
+        id="search"
+        placeholder="Buscar ciudad..."
+        class="bg-transparent text-xs px-2 py-1 text-white outline-none w-full"
+        />
+
+       <button
+        type="submit"
+        class="bg-red-polish px-3 py-1 text-white text-xs hover:bg-red-polish-700 transition"
+        >
+        🔍
+       </button>
+
+      </form>
+    </div>
+
+    <div class="flex justify-end items-center gap-3 pr-9 sm:pr-9">
+
+      <button id="theme-toggle" class="text-white text-xl">
+        🌙
+      </button>
+
+      <select id="language" class="hidden sm:block bg-slate-800 border border-slate-700 text-xs rounded-md px-2 text-white">
+        <option value="es">🇪🇦​</option>
+        <option value="en">🇬🇧</option>
+        <option value="pl">🇵🇱</option>
+        <option value="de">🇩🇪</option>
+      </select>
+
+      <label for="menu-toggle" class="cursor-pointer sm:hidden">
+        <div class="space-y-1">
+          <span class="block w-5 h-0.5 bg-white"></span>
+          <span class="block w-5 h-0.5 bg-white"></span>
+          <span class="block w-5 h-0.5 bg-white"></span>
+        </div>
+      </label>
+
+    </div>
+  </div>
+
+  <nav class="absolute top-full left-0 w-40 bg-gray-700 z-50 hidden peer-checked:block sm:hidden">
+
+    <ul class="flex flex-col gap-4 p-3 text-center text-sm">
+      <li><a href="#home" class="hover:text-white" data-key="home">Home</a></li>
+      <li><a href="#cities" class="hover:text-white" data-key="cities">Cities</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="banner" class="hidden h-[90vh] flex flex-col items-center justify-center text-white bg-gradient-to-b from-sky-800 to-gray-500">
+  
+  <h1 class="text-4xl font-bold mb-2" data-key='bannerTitle'>Climato</h1>
+ 
+<p class="text-xl text-gray-300 leading-snug text-center sm:text-left max-w-xl mx-auto sm:mx-0">
+  Consulta el clima en cualquier ciudad en segundos
+</p>
+
+</section>
+ 
+<section id="grid-city-weather" class="hidden grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-4  max-w-7xl">
+
+
+</section>
+
+<footer class="w-full bg-gray-800 text-gray-300 py-10 border-t border-gray-700">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col gap-8 sm:flex-row sm:flex-wrap sm:justify-between sm:gap-8">
+
+ <div class="flex-1 text-center mb-4 sm:mb-0">
+  <h3 class="text-lg font-semibold mb-2" data-key='footerTitle'>Climato</h3>
+  <ul class="text-gray-400 space-y-1">
+    <li><a href="#home" class="hover:text-white" data-key='home'>Home</a></li>
+    <li><a href="#cities" class="hover:text-white" data-key='cities'>Cities</a></li>
+  </ul>
+</div>
+
+    <div class="flex-1 text-center  mb-4 sm:mb-0">
+      <h3 class="text-lg font-semibold mb-2" data-key="contact">Contacto</h3>
+      <p class="text-sm mb-1 hover:text-white transition-colors cursor-pointer">info@Climato.pl</p>
+      <p class="text-sm hover:text-white transition-colors cursor-pointer">+48 22 456 78 90</p>
+    </div>
+    </div>
+
+  
+    <div class="flex justify-center flex-wrap gap-6 mt-6 mb-4">
+      <ul class="flex gap-6">
+        <li><a href="#"><i class="fa-brands fa-square-facebook text-white text-2xl"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram text-white text-2xl"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-x-twitter text-white text-2xl"></i></a></li>
+      </ul>
+      
+     
+    </div>
+
+    <p class="text-sm text-gray-400 text-center" data-key='footerCopy'>
+     
+    </p>
+</footer>
+<script src="js/nodes.js"></script>
+<script src="js/navigation.js"></script>
+<script type="module" src="js/app16.js"></script>
+
+
+</body>
+</html>
+
+
