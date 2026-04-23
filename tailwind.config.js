@@ -10,7 +10,12 @@ module.exports = {
     extend: {
       colors: {
      'red-polish': 'rgb(220, 20, 60)'
-      }
+      },
+      screens: {
+      sm: '640px',
+      md: '820px',
+     lg: '1024px',
+     }     
     },
   },
   plugins: [],

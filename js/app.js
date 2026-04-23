@@ -180,9 +180,9 @@ function createCard(city) {
 
   const daysHTML = city.daily.map(d => {
 
-    const hoursHTML = d.hours.slice(0, 5).map(h => `
+    const hoursHTML = d.hours.slice(0, 7).map(h => `
       <div class='flex flex-col items-center text-white min-w-[50px]'>
-        <span class='text-[5px] opacity-70'>${h.hour}</span>
+        <span class='text-[9px] opacity-70'>${h.hour}</span>
         <img src='${getWeatherIcon(h.icon)}' class='w-5 h-5 my-1' />
         <span class='text-sm font-medium'>${Math.round(h.temp)}°</span>
       </div>
