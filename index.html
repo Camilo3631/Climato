@@ -11,7 +11,7 @@
      <link rel="stylesheet" href="css/styles.css">
     <title>Pogoda Teraz</title>
 </head>
-<body class="bg-white text-black dark:bg-gray-900 dark:text-white text-base">
+<body class="bg-white text-black dark:bg-gray-900 dark:text-white text-base min-h-screen flex flex-col">
 <header class="w-full bg-gray-800 text-gray-300 border-t border-gray-700 relative">
 
   <input type="checkbox" id="menu-toggle" class="hidden peer">
@@ -84,7 +84,7 @@
     </ul>
   </nav>
 </header>
-
+<main class="flex-grow flex flex-col">
 <section id="banner" class="hidden h-[90vh] flex flex-col items-center justify-center text-white bg-gradient-to-b from-sky-800 to-gray-500">
   
   <h1 class="text-4xl font-bold mb-2" data-key='bannerTitle'>Climato</h1>
@@ -99,9 +99,9 @@
 </section>
 
 
+</main>
 
-
-<footer class="w-full bg-gray-800 text-gray-300 py-10 border-t border-gray-700">
+<footer class="mt-auto w-full bg-gray-800 text-gray-300 py-10 border-t border-gray-700">
   <div class="max-w-6xl mx-auto px-4 flex flex-col gap-8 sm:flex-row sm:flex-wrap sm:justify-between sm:gap-8">
 
  <div class="flex-1 text-center mb-4 sm:mb-0">

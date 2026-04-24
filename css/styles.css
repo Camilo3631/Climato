@@ -651,6 +651,11 @@ video {
   flex: 1 1 0%;
 }
 
+footer {
+   height: auto;
+}
+
+
 .cursor-pointer {
   cursor: pointer;
 }

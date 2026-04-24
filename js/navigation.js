@@ -1,18 +1,19 @@
-
 window.addEventListener('DOMContentLoaded', navigator, false);
 window.addEventListener('hashchange', navigator, false);
 
+function navigator ()  {
 
+  if (!location.hash) {
+    location.hash = '#home'
+    return
+  }
 
-function navigator () {
-    if (location.hash.startsWith('#home')) {
-        homePage();
-    } else if (location.hash.startsWith('#cities')) {
-        citiesPage();
-
-    }
+  if (location.hash.startsWith('#home')) {
+      homePage();
+  } else if (location.hash.startsWith('#cities')) {
+     citiesPage();
+  }
 }
-
 
 const homePage = () => {
    banner.classList.remove('hidden');
@@ -26,4 +27,3 @@ const citiesPage = () => {
    grid.classList.remove("hidden");
 
 }
-
