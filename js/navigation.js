@@ -1,29 +1,28 @@
 window.addEventListener('DOMContentLoaded', navigator, false);
 window.addEventListener('hashchange', navigator, false);
 
-function navigator ()  {
+function navigator() {
+
 
   if (!location.hash) {
-    location.hash = '#home'
-    return
+    location.hash = '#home';
   }
 
-  if (location.hash.startsWith('#home')) {
-      homePage();
-  } else if (location.hash.startsWith('#cities')) {
-     citiesPage();
+  const hash = location.hash;
+
+  if (hash.startsWith('#home')) {
+    homePage();
+  } else if (hash.startsWith('#cities')) {
+    citiesPage();
   }
 }
 
 const homePage = () => {
    banner.classList.remove('hidden');
-   grid.classList.add("hidden");
-  
+   grid.classList.add('hidden');
 }
 
-
 const citiesPage = () => {
-    banner.classList.add("hidden");
-   grid.classList.remove("hidden");
-
+   banner.classList.add('hidden');
+   grid.classList.remove('hidden');
 }
