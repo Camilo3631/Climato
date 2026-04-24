@@ -2,7 +2,8 @@ import {
   getLanguage,
   getDayName,
   initLanguagei18n,
-  onLanguageChange
+  onLanguageChange,
+  translations
 } from './i18n.js';
 
 import { apikey } from "./config.js";
@@ -236,12 +237,42 @@ function renderGrid(currentCity = null) {
   const data = localStorage.getItem('cities');
   if (data) cities = JSON.parse(data);
 
+  const lang = getLanguage()
+
   grid.innerHTML = '';
 
   if (loading) {
     grid.innerHTML = `<div class='h-32 bg-gray-300 animate-pulse rounded-3xl'></div>`;
     return;
   }
+
+  if (!currentCity && cities.length === 0) {
+    grid.innerHTML = `
+     <div style='
+     grid-column: 1 / -1;
+     justify-self: center;
+     border-radius: 20%;
+     overflow: hidden;
+     margin-top: 24px;
+     margin-bottom: 12px;
+     height: 440px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     '>
+     <p style='
+      margin: 0;
+      color: #9ca3af;
+      text-align: center;
+      '>
+        ${translations[lang].noCities}
+      </p>
+    </div>
+     `;
+     return;
+  }
+
+
 
   if (currentCity) grid.innerHTML += createCard(currentCity);
 

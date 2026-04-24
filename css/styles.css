@@ -715,10 +715,16 @@ body {
   min-height: 100vh;
 }
 
+#texto  {
+   text-align: center !important;
+   width: 100%;
+}
+
 
 #grid-city-weather {
   min-height: 100vh;
 }
+
 body {
   @apply text-base;
 }

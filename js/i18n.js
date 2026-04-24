@@ -7,6 +7,7 @@ export const translations = {
     bannerText: 'Consulta el clima de cualquier ciudad en segundos',
     searchPlaceholder: 'Buscar ciudad...',
     footerCopy: '© 2026 Pogoda Teraz. Todos los derechos reservados.',
+    noCities: 'Aún no hay ciudades guardadas',
     days: ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado']
   },
 
@@ -18,6 +19,7 @@ export const translations = {
     bannerText: 'Check the weather in any city in seconds',
     searchPlaceholder: 'Search city...',
     footerCopy: '© 2026 Pogoda Teraz. All rights reserved.',
+    noCities: 'No cities saved yet',
     days: ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
   },
 
@@ -29,6 +31,7 @@ export const translations = {
     bannerText: 'Sprawdź pogodę w dowolnym mieście w kilka sekund',
     searchPlaceholder: 'Szukaj miasta...',
     footerCopy: '© 2026 Pogoda Teraz. Wszelkie prawa zastrzeżone.',
+    noCities: 'Nie zapisano jeszcze żadnych miast',
     days: ['niedziela','poniedziałek','wtorek','środa','czwartek','piątek','sobota']
   },
 
@@ -40,6 +43,7 @@ export const translations = {
     bannerText: 'Prüfen Sie das Wetter in jeder Stadt in Sekunden',
     searchPlaceholder: 'Stadt suchen...',
     footerCopy: '© 2026 Pogoda Teraz. Alle Rechte vorbehalten.',
+    noCities: 'Noch keine Städte gespeichert',
     days: ['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag']
   }
 };
