@@ -103,6 +103,8 @@ const searchCity = async (cityName) => {
             return;
         }
 
+        location.hash = `#cities/${Data[0].name}`;
+
         await getWeather(Data[0].name, Data[0].lat, Data[0].lon);
 
     } catch {
